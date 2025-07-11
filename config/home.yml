@@ -12,7 +12,7 @@
           cache: 1m
           title: Services
           sites:
-            - title: Jellyfin
+            - title: Home Assistant Meadia Manager
               url: https://yourdomain.com/
               icon: si:jellyfin
             - title: Gitea

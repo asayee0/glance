@@ -12,24 +12,24 @@
           cache: 1m
           title: Services
           sites:
-            - title: Jellyfin
-              url: https://yourdomain.com/
-              icon: si:jellyfin
-            - title: Gitea
-              url: https://yourdomain.com/
-              icon: si:gitea
-            - title: qBittorrent # only for Linux ISOs, of course
-              url: https://yourdomain.com/
-              icon: si:qbittorrent
-            - title: Immich
-              url: https://yourdomain.com/
-              icon: si:immich
-            - title: AdGuard Home
-              url: https://yourdomain.com/
-              icon: si:adguard
-            - title: Vaultwarden
-              url: https://yourdomain.com/
-              icon: si:vaultwarden
+            - title: Plex
+              url: https://plex.tv/
+              icon: si:plex
+            - title: GitHub
+              url: https://github.com/
+              icon: si:github
+            - title: Transmission
+              url: https://transmissionbt.com/
+              icon: si:transmission
+            - title: Nextcloud
+              url: https://nextcloud.com/
+              icon: si:nextcloud
+            - title: Pi-hole
+              url: https://pi-hole.net/
+              icon: si:pihole
+            - title: Bitwarden
+              url: https://bitwarden.com/
+              icon: si:bitwarden
 
         - type: bookmarks
           groups:

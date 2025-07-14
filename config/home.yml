@@ -4,7 +4,7 @@
   center-vertically: false
   theme: dark
   columns:
-    - size: small
+    - size: full
       widgets:
         - type: weather
           location: "New York, NY"
@@ -18,7 +18,7 @@
             - timezone: Europe/London
               label: GMT
 
-    - size: large
+    - size: full
       widgets:
         - type: search
           autofocus: false
@@ -55,50 +55,3 @@
 
         - type: calendar
           calendar-url: https://calendar.google.com/calendar/ical/example%40gmail.com/private-123/basic.ics
-
-    - size: medium
-      widgets:
-        - type: bookmarks
-          groups:
-            - title: Development
-              color: blue
-              links:
-                - title: Stack Overflow
-                  url: https://stackoverflow.com/
-                - title: GitLab
-                  url: https://gitlab.com/
-                - title: Docker Hub
-                  url: https://hub.docker.com/
-                - title: MDN Web Docs
-                  url: https://developer.mozilla.org/
-            - title: Cloud Services
-              color: green
-              links:
-                - title: AWS Console
-                  url: https://console.aws.amazon.com/
-                - title: Google Cloud
-                  url: https://console.cloud.google.com/
-                - title: Azure Portal
-                  url: https://portal.azure.com/
-            - title: Productivity
-              color: orange
-              links:
-                - title: Notion
-                  url: https://www.notion.so/
-                - title: Slack
-                  url: https://slack.com/
-                - title: Trello
-                  url: https://trello.com/
-                - title: Discord
-                  url: https://discord.com/
-            - title: News & Media
-              color: red
-              links:
-                - title: Hacker News
-                  url: https://news.ycombinator.com/
-                - title: TechCrunch
-                  url: https://techcrunch.com/
-                - title: The Verge
-                  url: https://www.theverge.com/
-                - title: Twitch
-                  url: https://www.twitch.tv/

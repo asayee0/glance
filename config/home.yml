@@ -1,59 +1,104 @@
-- name: Startpage
-  width: slim
-  hide-desktop-navigation: true
-  center-vertically: true
+- name: MainDashboard
+  width: wide
+  hide-desktop-navigation: false
+  center-vertically: false
+  theme: dark
   columns:
-    - size: full
+    - size: small
+      widgets:
+        - type: weather
+          location: "New York, NY"
+          units: metric
+
+        - type: clock
+          hour-format: 24h
+          timezones:
+            - timezone: America/New_York
+              label: EST
+            - timezone: Europe/London
+              label: GMT
+
+    - size: large
       widgets:
         - type: search
-          autofocus: true
+          autofocus: false
+          search-engine: duckduckgo
 
         - type: monitor
-          cache: 1m
-          title: Services
+          cache: 5m
+          title: Production Services
           sites:
-            - title: Jellyfin
-              url: https://yourdomain.com/
-              icon: si:jellyfin
-            - title: Gitea
-              url: https://yourdomain.com/
-              icon: si:gitea
-            - title: qBittorrent # only for Linux ISOs, of course
-              url: https://yourdomain.com/
-              icon: si:qbittorrent
-            - title: Immich
-              url: https://yourdomain.com/
-              icon: si:immich
-            - title: AdGuard Home
-              url: https://yourdomain.com/
-              icon: si:adguard
-            - title: Vaultwarden
-              url: https://yourdomain.com/
-              icon: si:vaultwarden
+            - title: Plex Media Server
+              url: https://app.plex.tv/
+              icon: si:plex
+            - title: Nextcloud
+              url: https://cloud.example.com/
+              icon: si:nextcloud
+            - title: Home Assistant
+              url: https://homeassistant.local:8123/
+              icon: si:homeassistant
+            - title: Portainer
+              url: https://portainer.local:9000/
+              icon: si:portainer
+            - title: Grafana
+              url: https://grafana.local:3000/
+              icon: si:grafana
+            - title: Proxmox
+              url: https://proxmox.local:8006/
+              icon: si:proxmox
 
+        - type: rss
+          title: Tech News
+          feeds:
+            - url: https://feeds.ars-technica.com/arstechnica/index
+            - url: https://rss.cnn.com/rss/edition.rss
+
+        - type: calendar
+          calendar-url: https://calendar.google.com/calendar/ical/example%40gmail.com/private-123/basic.ics
+
+    - size: medium
+      widgets:
         - type: bookmarks
           groups:
-            - title: General
+            - title: Development
+              color: blue
               links:
-                - title: Gmail
-                  url: https://mail.google.com/mail/u/0/
-                - title: Amazon
-                  url: https://www.amazon.com/
-                - title: Github
-                  url: https://github.com/
-            - title: Entertainment
+                - title: Stack Overflow
+                  url: https://stackoverflow.com/
+                - title: GitLab
+                  url: https://gitlab.com/
+                - title: Docker Hub
+                  url: https://hub.docker.com/
+                - title: MDN Web Docs
+                  url: https://developer.mozilla.org/
+            - title: Cloud Services
+              color: green
               links:
-                - title: YouTube
-                  url: https://www.youtube.com/
-                - title: Prime Video
-                  url: https://www.primevideo.com/
-                - title: Disney+
-                  url: https://www.disneyplus.com/
-            - title: Social
+                - title: AWS Console
+                  url: https://console.aws.amazon.com/
+                - title: Google Cloud
+                  url: https://console.cloud.google.com/
+                - title: Azure Portal
+                  url: https://portal.azure.com/
+            - title: Productivity
+              color: orange
               links:
-                - title: Reddit
-                  url: https://www.reddit.com/
-                - title: Twitter
-                  url: https://twitter.com/
-                - title: Instagram
-                  url: https://www.instagram.com/
+                - title: Notion
+                  url: https://www.notion.so/
+                - title: Slack
+                  url: https://slack.com/
+                - title: Trello
+                  url: https://trello.com/
+                - title: Discord
+                  url: https://discord.com/
+            - title: News & Media
+              color: red
+              links:
+                - title: Hacker News
+                  url: https://news.ycombinator.com/
+                - title: TechCrunch
+                  url: https://techcrunch.com/
+                - title: The Verge
+                  url: https://www.theverge.com/
+                - title: Twitch
+                  url: https://www.twitch.tv/
